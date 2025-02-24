@@ -65,8 +65,18 @@ By using transactions, we prevent **partial updates**, maintaining **data consis
 
 To use this authentication system, you **must provide the following environment variables**:  
 
-### **1️⃣ MongoDB Atlas Connection URL (Required)**  
-This system requires a **MongoDB Atlas cloud database** for transaction support.  
+### **1️⃣ MongoDB Atlas Connection URL, Redis Connection URL, SendGrid Email API (Required)**  
+This system requires a :
+**MongoDB Atlas cloud database** for transaction support,
+**Redis database**  for token blacklisting,
+**SendGrid Email API** for user creation and OTP purpose.
 
 ```env
+# Redis Connection URL (⚠️ Required for Token Blacklisting)
 MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/<dbname>?retryWrites=true&w=majority
+
+# Redis Connection URL (⚠️ Required for Token Blacklisting)
+REDIS_URL=redis://<your-redis-host>:<port>
+
+# SendGrid API Key (⚠️ Required for OTP Emails)
+SENDGRID_API_KEY=SG.xxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyy
