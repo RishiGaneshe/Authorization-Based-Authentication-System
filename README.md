@@ -1,4 +1,10 @@
-# 🚀 Authorization-Based Authentication System  
+# 🚀 Authorization Based Authentication System  
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node-dot-js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![SendGrid](https://img.shields.io/badge/SendGrid-00A1E0?style=for-the-badge&logo=sendgrid&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 A **secure and scalable authentication system** implementing **role-based authorization**, **JWT authentication**, and **Redis-based token blacklisting**. Designed for **production-grade applications**, this system ensures **data consistency**, **security**, and **atomic operations** with **database transactions**.  
 
