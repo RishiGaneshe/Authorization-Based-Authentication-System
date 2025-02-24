@@ -65,7 +65,7 @@ By using transactions, we prevent **partial updates**, maintaining **data consis
 
 To use this authentication system, you **must provide the following environment variables**:  
 
-### **1️⃣ MongoDB Atlas Connection URL, Redis Connection URL, SendGrid Email API (Required)**  
+### ** MongoDB Atlas Connection URL, Redis Connection URL, SendGrid Email API (Required)**  
 This system requires a :
 **MongoDB Atlas cloud database** for transaction support,
 **Redis database**  for token blacklisting,
