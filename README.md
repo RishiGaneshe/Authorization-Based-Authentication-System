@@ -60,3 +60,13 @@ This system uses **MongoDB transactions** to ensure **atomic operations** when:
 By using transactions, we prevent **partial updates**, maintaining **data consistency** across the database.  
 
 ---
+
+## ⚙️ Setup & Configuration  
+
+To use this authentication system, you **must provide the following environment variables**:  
+
+### **1️⃣ MongoDB Atlas Connection URL (Required)**  
+This system requires a **MongoDB Atlas cloud database** for transaction support.  
+
+```env
+MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/<dbname>?retryWrites=true&w=majority
