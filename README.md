@@ -122,7 +122,7 @@ SENDGRID_API_KEY=SG.xxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyy
 ```
 ## 🚀 Entry File  
 
-The **entry point** for this project is:  
+The **entry point** for this project is:  server.js
 
 
 This file initializes the **Express server**, connects to **MongoDB**, and sets up the required middleware.
@@ -133,10 +133,10 @@ To get and run this server on any machine, follow these steps:
 
 ```sh
 # Clone the repository
-git clone <your-repository-url>
+git clone https://github.com/RishiGaneshe/Authorization-Based-Authentication-System.git
 
 # Navigate into the project directory
-cd <your-project-folder>
+cd Authorization-Based-Authentication-System
 
 # Install dependencies
 npm install
