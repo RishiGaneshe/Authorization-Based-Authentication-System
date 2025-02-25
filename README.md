@@ -111,13 +111,20 @@ This system requires a :
 
 ```env
 # Redis Connection URL (⚠️ Required for Token Blacklisting)
-MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/<dbname>?retryWrites=true&w=majority
+MONGO_LIVE=mongodb+srv://<username>:<password>@cluster.mongodb.net/<dbname>?retryWrites=true&w=majority
 
 # Redis Connection URL (⚠️ Required for Token Blacklisting)
-REDIS_URL=redis://<your-redis-host>:<port>
+REDIS_LOCAL=redis://<your-redis-host>:<port>
 
 # SendGrid API Key (⚠️ Required for OTP Emails)
-SENDGRID_API_KEY=SG.xxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyy
+SEND_GRID=SG.xxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyy
+
+# JWT Secret (⚠️ Required for JWT Signature generation)
+SECRET=xxxxxxx.xxxxxx.yyyyyyyyyy.yyyyyyyyyyyy
+
+# PORT Number (⚠️ Required for Running Application)
+PORT=4001
+
 
 ```
 ## 🚀 Entry File  
