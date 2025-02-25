@@ -125,7 +125,7 @@ SENDGRID_API_KEY=SG.xxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyy
 The **entry point** for this project is:  server.js
 
 
-This file initializes the **Express server**, connects to **MongoDB**, and sets up the required middleware.
+This file initializes the **Express server**, connects to **MongoDB** and **Redis**, and sets up the required middleware.
 
 ## 🛠️ How to Clone and Run  
 
