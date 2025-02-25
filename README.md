@@ -71,6 +71,8 @@ A **secure and scalable authentication system** implementing **role-based author
 
 🔴 **MongoDB Atlas is required for transactions!**  
 Local MongoDB does **not** support transactions due to the lack of **replica set initialization**, which is essential for **atomicity and consistency** in database operations.  
+🔴 **Use Postman for API testing!**  
+Since there is no frontend yet, **Postman** (or similar API testing tools) should be used to test the authentication and authorization endpoints.  
 
 ---
 
