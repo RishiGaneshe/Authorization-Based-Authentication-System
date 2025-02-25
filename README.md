@@ -5,6 +5,7 @@
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 ![SendGrid](https://img.shields.io/badge/SendGrid-00A1E0?style=for-the-badge&logo=sendgrid&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)  
 
 A **secure and scalable authentication system** implementing **role-based authorization**, **JWT authentication**, and **Redis-based token blacklisting**. Designed for **production-grade applications**, this system ensures **data consistency**, **security**, and **atomic operations** with **database transactions**.  
 
