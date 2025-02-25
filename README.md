@@ -20,6 +20,41 @@ A **secure and scalable authentication system** implementing **role-based author
 
 ---
 
+
+## 📌 API Endpoints
+
+### 🔹 **1. User Registration & Authentication**
+| Method | Endpoint | Description |
+|--------|---------|-------------|
+| **POST** | `/sign-up` | Registers a new user by collecting user details and storing them securely. |
+| **POST** | `/sign-up/otp` | Verifies the OTP sent to the user during sign-up. |
+| **POST** | `/login` | Authenticates users and issues a JWT token upon successful login. |
+
+### 🔹 **2. Role-Based Access (Protected Routes)**
+| Method | Endpoint | Description |
+|--------|---------|-------------|
+| **GET** | `/user` | Accessible only to authenticated users. Fetches user-specific data. |
+| **GET** | `/admin` | Accessible only to authenticated admins. Fetches admin-related data. |
+
+> 🛡 **Authentication & Authorization:** The above endpoints require **JWT authentication** and role-based access control (RBAC) using middleware.
+
+### 🔹 **3. Logout Functionality**
+| Method | Endpoint | Description |
+|--------|---------|-------------|
+| **GET** | `/user/logout` | Logs out the user by blacklisting the token to invalidating the user session . |
+| **GET** | `/admin/logout` | Logs out the admin by blacklisting the token to invalidating the admin session. |
+
+---
+
+## 📌 Authentication Flow
+1️⃣ **User signs up** via `/sign-up`, and an OTP is sent for verification.  
+2️⃣ **User verifies OTP** via `/sign-up/otp` to complete the registration.  
+3️⃣ **User logs in** via `/login` and receives a JWT token.  
+4️⃣ **Authenticated users can access** `/user`, and admins can access `/admin` (JWT required).  
+5️⃣ **Users/Admins log out** via `/user/logout` or `/admin/logout`, ensuring token invalidation.  
+
+---
+
 ## 🛠️ Technology Stack  
 
 - **Node.js & Express.js** – Backend framework  
@@ -54,7 +89,7 @@ Local MongoDB does **not** support transactions due to the lack of **replica set
 
 This system uses **MongoDB transactions** to ensure **atomic operations** when:  
 - **Creating a new user** – The user profile is saved **only if OTP verification succeeds**.  
-- **Updating user roles** – Ensures **role updates** are committed only if all conditions are met.  
+- **Assigning user roles** – The role is **set during user registration** only if the OTP verification succeeds.    
 - **Revoking JWT tokens** – The token is **blacklisted only if** session revocation succeeds.  
 
 By using transactions, we prevent **partial updates**, maintaining **data consistency** across the database.  
