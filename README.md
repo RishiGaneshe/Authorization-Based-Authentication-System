@@ -118,3 +118,32 @@ REDIS_URL=redis://<your-redis-host>:<port>
 
 # SendGrid API Key (⚠️ Required for OTP Emails)
 SENDGRID_API_KEY=SG.xxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyy
+
+```
+## 🚀 Entry File  
+
+The **entry point** for this project is:  
+
+
+This file initializes the **Express server**, connects to **MongoDB**, and sets up the required middleware.
+
+## 🛠️ How to Clone and Run  
+
+To get and run this server on any machine, follow these steps:  
+
+```sh
+# Clone the repository
+git clone <your-repository-url>
+
+# Navigate into the project directory
+cd <your-project-folder>
+
+# Install dependencies
+npm install
+
+# Create a `.env` file and configure your environment variables
+
+# Start the server
+node server.js  # or use nodemon for live reloading
+
+
