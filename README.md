@@ -59,8 +59,7 @@ A **secure and scalable authentication system** implementing **role-based author
 ## 🛠️ Technology Stack  
 
 - **Node.js & Express.js** – Backend framework  
-- **MongoDB Atlas** – Cloud database (⚠️ *Required for transaction support*)  
-- **Mongoose** – ODM for MongoDB  
+- **MongoDB Atlas** – Cloud database (⚠️ *Required for transaction support*) 
 - **JSON Web Tokens (JWT)** – Secure authentication  
 - **Redis** – Token blacklisting for session management  
 - **SendGrid** – Email OTP verification  
