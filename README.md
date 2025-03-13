@@ -8,6 +8,7 @@
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)  
 
 A **secure and scalable authentication system** implementing **role-based authorization**, **JWT authentication**, and **Redis-based token blacklisting**. Designed for **production-grade applications**, this system ensures **data consistency**, **security**, and **atomic operations** with **database transactions**.  
+**Motto**: A robust and adaptable authentication solution for modern applications. With minor modifications, this system can be seamlessly integrated into any project requiring JWT-based authentication.
 
 ## 🔥 Features  
 
